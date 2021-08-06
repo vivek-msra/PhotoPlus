@@ -68,8 +68,6 @@ export default class Navbar extends Component {
     localStorage.setItem('name','');
   }
   componentDidMount(){
-    //document.getElementById('nametag').value=localStorage.getItem('name')
-    //this.setState({name: localStorage.getItem('name')})
     if(localStorage.getItem('name')){
       if(localStorage.getItem('name').length>1)
     {
