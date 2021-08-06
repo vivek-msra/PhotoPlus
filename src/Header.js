@@ -52,22 +52,6 @@ onchangeemail=(text)=>{
 onchangepass=(text)=>{
   this.setState({password:text.target.value})
 }
-
-//handle5 -: submit button
-// onformsubmit=()=>{
-//  axios({ 
-// url: "http://localhost:5000/acc-details", 
-//  method: "POST",
-//  headers: { Accept: "application/json", "Content-Type": "application/x-www-form-urlencoded;charset=utf-8" },
-//  data: { email: this.state.email, password: this.state.password } 
-// })//end of axios part
-//   .then(response=>{
-//     console.log('success') //notify
-//   })
-//   .catch(err=>console.log(err)) //error handler
-// }
-// //end of onformsubmit
-
   render() {
     localStorage.setItem("curPath", "/");//storing data locally , 2 argument -: key, value
     const {
